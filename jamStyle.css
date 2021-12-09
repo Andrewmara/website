@@ -1,0 +1,101 @@
+body{
+    background-color:#151515;
+    margin: 0;
+}
+
+/*
+*{
+    border: 1px solid white;
+}
+*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #151515;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.logo{
+    margin-left: 30px;
+}
+.logo p{
+    color: #EEEEEE;
+    display: inline;
+    font-size: 30px;
+}
+
+.nav{
+    display: flex;
+    column-gap: 40px;
+
+    margin-right: 60px;
+
+}
+.nav a{
+    text-decoration: none;
+    color: #EEEEEE;
+
+    align-self:center;
+}
+a:hover{
+    color: #DA0037;
+    transition: 0.8s;
+}
+a:hover::before{
+    content:"<";
+    color: #EEEEEE;
+    transition: 0.8s;
+}
+
+a:hover::after{
+    content:">";
+    color: #EEEEEE;
+    transition: 0.8s;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+.hero{
+    display: flex;
+    flex-flow: row nowrap;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 60px;
+    /**border-bottom: 2px solid #EEEEEE;**/
+
+}
+
+.hero h1{
+    color: #EEEEEE;
+    font-size: 80px;
+    margin: 0;
+}
+.hero p{
+    color: #EEEEEE;
+    margin: 0;
+}
+
+.dove img{
+    height: 300px;
+    width:300px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter:drop-shadow(3px 2px 1px #EEEEEE);
+}
+
+
+
+
+.info{
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotatey(-15deg) rotatex(0deg);
+
+    width: 600px;
+}
