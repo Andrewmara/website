@@ -1,14 +1,33 @@
 body{
     background-color:#151515;
     margin: 0;
+    height: 1000px;
+}
+.container{
+    
+    display:grid;
+    
+    grid-template-rows: 1fr 7fr auto auto auto 5fr;
+    grid-template-columns: 50px 4fr 50px;
+
+    grid-template-areas:
+    "menu menu menu"
+    "hero hero hero"
+    ". about ."
+    ". skills ."
+    ". projects ."
+    "footer footer footer";
+    height: 100%;
+    width: 100%;
+    row-gap: 20px;
 }
 
 /*
 *{
     border: 1px solid white;
 }
-*/
 
+*/
 .menu{
     display: flex;
     flex-direction: row;
@@ -16,6 +35,9 @@ body{
     background-color: #151515;
     padding: 10px;
     font-size: 20px;
+
+
+    grid-area: menu;
 }
 
 .logo{
@@ -67,9 +89,12 @@ a:hover{
     align-items: center;
 
     column-gap: 60px;
+    grid-area: hero;
     /**border-bottom: 2px solid #EEEEEE;**/
-
 }
+
+
+
 
 .hero h1{
     color: #EEEEEE;
@@ -100,6 +125,8 @@ a:hover{
     flex-direction: column;
     width: 600px;
     row-gap: 10px;
+    padding:20px;
+
 }
 
 .social-med{
@@ -108,9 +135,8 @@ a:hover{
 }
 
 .social{
-    filter:drop-shadow(2px 1px 1px #EEEEEE);
-    height: 33px; 
-    width: 35px;
+    height: 23px; 
+    width: 25px;
     margin-left: 20px;
 }
 
@@ -118,8 +144,42 @@ a:hover{
     filter: grayscale(80%);
 }
 
+/*------------------------------------------*/
+.about{
+    display: grid;
+    background-color: #2C272E;
+    grid-area: about;
+    padding:30px;
+    color: #EEEEEE;
+    grid-template-columns: 30% 70%;
+}
+
+.description{
+
+}
 
 
+/*------------------------------------------*/
+.skills{
+    grid-area: skills;
+    background-color: #DA0037;
+    padding:30px;
+
+}
+
+.projects{
+    grid-area: projects;
+    background-color: cornflowerblue;
+    padding:30px;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: cyan;
+    padding:30px;
+
+}
 
 
 
