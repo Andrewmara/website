@@ -8,6 +8,7 @@ body{
     border: 1px solid white;
 }
 */
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -43,13 +44,13 @@ a:hover{
     color: #DA0037;
     transition: 0.8s;
 }
-a:hover::before{
+.nav>a:hover::before{
     content:"<";
     color: #EEEEEE;
     transition: 0.8s;
 }
 
-a:hover::after{
+.nav>a:hover::after{
     content:">";
     color: #EEEEEE;
     transition: 0.8s;
@@ -87,15 +88,41 @@ a:hover::after{
     background-repeat: no-repeat;
     background-size: cover;
 
-    filter:drop-shadow(3px 2px 1px #EEEEEE);
 }
 
 
 
 
 .info{
+    display: flex;
     transform-style: preserve-3d;
     transform: perspective(500px) rotatey(-15deg) rotatex(0deg);
-
+    flex-direction: column;
     width: 600px;
+    row-gap: 10px;
 }
+
+.social-med{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social{
+    filter:drop-shadow(2px 1px 1px #EEEEEE);
+    height: 33px; 
+    width: 35px;
+    margin-left: 20px;
+}
+
+.social:hover{
+    filter: grayscale(80%);
+}
+
+
+
+
+
+
+
+
+
