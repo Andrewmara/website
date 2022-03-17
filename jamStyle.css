@@ -3,7 +3,7 @@
 body{
     background-color:#151515;
     margin: 0;
-    height: 1000px;
+    height: 1500px;
 }
 .container{
     
@@ -24,12 +24,12 @@ body{
     row-gap: 20px;
 }
 
-/*
+
 *{
     border: 1px solid white;
 }
 
-*/
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -154,10 +154,26 @@ a:hover{
 /*------------------------------------------*/
 .skills{
     grid-area: skills;
-    background-color: cornflowerblue;
     padding:30px;
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+.frontend{
+    background-color: #F83839;
+    height: 400px;
+    width:650px;
+    border-radius: 25px;
+}
+.backend{
+    background-color: #7FE5F0;
+    height: 400px;
+    width:650px;
+    border-radius: 25px;
+}
+
+
 
 .projects{
     grid-area: projects;
